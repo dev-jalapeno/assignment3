@@ -40,9 +40,11 @@ json?usertoken=USER_TOKEN&coin=COIN
 RETURNS
 ```
 [
-  "status": {
-    "code": "400"
-    "description": "Bad Request"
+  {
+    "status": {
+      "code": "400"
+      "description": "Bad Request"
+    }
   }
 ]
 ```
@@ -70,9 +72,11 @@ json?usertoken=USER_TOKEN&coin=COIN
 RETURNS
 ```
 [
-  "status": {
-    "code": "200"
-    "description": "OK"
+  {
+    "status": {
+      "code": "200"
+      "description": "OK"
+    }
   }
 ]
 ```
