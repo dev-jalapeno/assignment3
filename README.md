@@ -52,6 +52,7 @@ RETURNS
   }
 ]
 ```
+Returning a `400 Bad Request` would indicate something went wrong and the purchase was not compoleted, like an invalid `usertoken` was passed or the user does not have enough money in their account. 
 <br>
 
 ## Sell Coin Endpoint
@@ -91,3 +92,4 @@ RETURNS
   }
 ]
 ```
+Returning a `200 OK` means that cryptocurrency was sold successfully.
