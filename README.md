@@ -19,25 +19,38 @@ Furthermore, a user must willingly share their `user token` with the application
 ## Buy Coin
 This POST request buys the user's coin.
 ```
-json?usertoken=USER_TOKEN&coin=-COIN
+json?usertoken=USER_TOKEN&coin=COIN
 ```
 
 - `usertoken` - User Token pertaining to the User buying the coin
-- `coin` - SYMBOL for coin (4 letter stock market name).
+- `coin` - SYMBOL for coin (a string, typically a 3 or 4 character stock market name).
 
 ### *Example*
 
 ```
-
+[
+  {
+    "usertoken": "aw7y9djj0ps37nd0"
+  },
+  {
+    "coin": "PEPE"
+  }
+]
 ```
 RETURNS
 ```
+[
+  "status": {
+    "code": "400"
+    "description": "Bad Request"
+  }
+]
 ```
 
 ## Sell Coin
 This POST request sells the users coin.
 ```
-json?usertoken=USER_TOKEN&coin=-COIN
+json?usertoken=USER_TOKEN&coin=COIN
 ```
 
 - `usertoken` - User Token pertaining to User selling the coin
@@ -45,8 +58,21 @@ json?usertoken=USER_TOKEN&coin=-COIN
 ### *Example*
 
 ```
-
+[
+  {
+    "usertoken": "aw7y9djl0ps37nd0"
+  },
+  {
+    "coin": "OSMO"
+  }
+]
 ```
 RETURNS
 ```
+[
+  "status": {
+    "code": "200"
+    "description": "OK"
+  }
+]
 ```
